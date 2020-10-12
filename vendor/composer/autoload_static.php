@@ -24,10 +24,12 @@ class ComposerStaticInitff1ac78c68d0f00d4eb0afecddc10d83
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\Finder\\' => 25,
         ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
+            'Prophecy\\' => 9,
             'PhpZip\\' => 7,
         ),
         'D' => 
@@ -56,13 +58,21 @@ class ComposerStaticInitff1ac78c68d0f00d4eb0afecddc10d83
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Prophecy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
+        ),
         'PhpZip\\' => 
         array (
-            0 => __DIR__ . '/..' . '/nelexa/zip/src/PhpZip',
+            0 => __DIR__ . '/..' . '/nelexa/zip/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -71,16 +81,6 @@ class ComposerStaticInitff1ac78c68d0f00d4eb0afecddc10d83
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'P' => 
-        array (
-            'Prophecy\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
-            ),
         ),
     );
 
@@ -557,7 +557,6 @@ class ComposerStaticInitff1ac78c68d0f00d4eb0afecddc10d83
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitff1ac78c68d0f00d4eb0afecddc10d83::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitff1ac78c68d0f00d4eb0afecddc10d83::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitff1ac78c68d0f00d4eb0afecddc10d83::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitff1ac78c68d0f00d4eb0afecddc10d83::$classMap;
 
         }, null, ClassLoader::class);
