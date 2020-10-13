@@ -1,6 +1,6 @@
 <?php
 
-namespace OCA\Carnet\Notifications;
+namespace OCA\CarnetNext\Notification;
 
 class Notifier
 {
